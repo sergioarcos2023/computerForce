@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		/* Set overall styles for body and sections */
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		section {
+			font-size: 3em;
+			color: white;
+			font-weight: bold;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+		}
+
+		/* Set styles for desktop view */
+		@media only screen and (min-width: 768px) {
+			body {
+				display: flex;
+				flex-direction: column;
+				height: 100vh;
+			}
+			#header {
+				background-color: grey;
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#menu {
+				background-color: blue;
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#main {
+				background-color: grey;
+				flex: 4;
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+			}
+			#aside {
+				background-color: green;
+				flex: 1;
+				height: 100%;
+			}
+			#footer {
+				background-color: blue;
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#menu ul {
+				display: flex;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				align-self: flex-start;
+			}
+			#menu li {
+				margin: 0 1em;
+			}
+			#menu a {
+				color: white;
+				text-decoration: none;
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+		}
+
+		/* Set styles for phone mobile view */
+		@media only screen and (max-width: 767px) {
+			body {
+				font-size: 2em;
+			}
+			section {
+				background-color: grey;
+				height: 33.33vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#header {
+				flex: 1;
+			}
+			#main {
+				flex: 3;
+			}
+			#footer {
+				flex: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Menu section -->
+	<section id="menu">
+		<ul>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Register</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</section>
+
+	<!-- Header section -->
+	<section id="header">
+		Header
+	</section>
+
+	<!-- Main section -->
+	<section id="main">
+		Main
+		<section id="aside">
+			Aside
+		</section>
+	</section>
+
+	<!-- Footer section -->
+	<section id="footer">
+		Footer
+	</section>
+</body>
+</html>
